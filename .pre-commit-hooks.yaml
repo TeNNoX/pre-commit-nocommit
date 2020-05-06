@@ -5,3 +5,9 @@
   types: [text]
   args: [-i] # case insensitive
   entry: 'NOCOMMIT'
+  exclude: >
+            (?x)^(
+                .pre-commit-.+|
+                path/to/file2.py|
+                path/to/file3.py
+            )$
