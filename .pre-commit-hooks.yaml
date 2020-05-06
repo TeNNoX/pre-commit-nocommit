@@ -1,0 +1,7 @@
+- id: nocommit-comment
+  name: Prevent commiting files with NOCOMMIT comments
+  description: Any file containing 'NOCOMMIT' (case insensitive) cannot be committed
+  language: pygrep
+  types: [text]
+  args: [-i] # case insensitive
+  entry: 'NOCOMMIT'
